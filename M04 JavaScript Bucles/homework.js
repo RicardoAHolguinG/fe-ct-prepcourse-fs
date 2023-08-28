@@ -18,16 +18,16 @@ function mayoriaDeEdad(edad) {
    // Si tiene 18 años ó más debe retornar el string: "Allowed".
    // Caso contrario: "Not allowed".
    // Tu código:
-   if (edad > 18){
-      return("Allowed");
+   if (edad >= 18){
+      return'Allowed';
 
-   }else{
-      return("Not allowed");
+   } else {
+      return'Not allowed';
    }
    
 }
 
-console.log(mayoriaDeEdad("19"));
+
 
 function conection(status) {
    // El argumento "status" representa el estado de conexión de un usuario.
@@ -81,19 +81,19 @@ function colors(color) {
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
    switch (color){
-      case "blue":
+      case 'blue':
          return("This is blue");
-      case "red":
+      case 'red':
          return("This is red");
-      case "green":
+      case 'green':
          return("This is green");
-      case "orange":
-         return("This orange");
+      case 'orange':
+         return("This is orange");
       default:
          return("Color not found");
    }
 } 
-console.log(colors("blue"));
+
 
 
 function esDiezOCinco(num) {
@@ -111,12 +111,13 @@ function estaEnRango(num) {
    // Retornar true si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar false.
    // Tu código:
-   if (num < 50 || num > 20 ){
-      return(true);
-   }else{
-      return(false);
+   if (num < 50 && num > 20){
+      return true;
+   } else {
+      return false;
    }
 }
+console.log(estaEnRango(85,10));
 
 function esEntero(num) {
    // Retornar true si "num" es un entero, ya sea positivo, negativo o cero.
